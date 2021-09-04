@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ping Pong Score Keeper</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container-sm shadow-sm">
+        <div class="row">
+            <div class="col"><img src="https://images.unsplash.com/photo-1534158914592-062992fbe900?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=3784&amp;q=80" class="img-fluid" alt=""></div>
+        </div>
+        <div class="row">
+            <div class="col"><h3 id="title">Ping Pong Score Keeper</h3></div>
+        </div>
+        <div class="row">
+            <div class="col"><h1 id="scores">0 to 0</h1></div>
+        </div>
+        <div class="row">
+            <div class="col"><p>Use the buttons below to keep score.</p></div>
+        </div>
+        <div class="row justify-content-start">
+            <div class="col"><h2>Playing to</h2></div>
+            <div class="col">
+                <select id="scoreLimitSelector" class="form-select" aria-label="Score limit selection">
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="btn-group" role="group" aria-label="Score Buttons">
+                    <button type="button" class="btn btn-success" id="addPlayer1">+1 Player One</button>
+                    <button type="button" class="btn btn-primary" id="addPlayer2">+1 Player Two</button>
+                    <button type="button" class="btn btn-danger" id="reset">Reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
